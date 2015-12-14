@@ -1,0 +1,3 @@
+name: 10.10.16
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json"]
