@@ -437,3 +437,36 @@ body {
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+\:root {
+  font-size: 16px; }
+
+body {
+  background-image: url(/assets/img/landing.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-size: cover; }
+
+.home-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.logo {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  background-image: url(/assets/img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 30vh;
+  width: 40vw;
+  background-size: contain;
+  padding: 0;
+  margin: 1rem; }
