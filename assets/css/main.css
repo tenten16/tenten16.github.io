@@ -441,13 +441,6 @@ body {
 \:root {
   font-size: 16px; }
 
-body {
-  background-image: url(/assets/img/landing.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  background-size: cover; }
-
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -456,17 +449,28 @@ body {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-
-.logo {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
-  background-image: url(/assets/img/logo.svg);
+          justify-content: center;
+  background-image: url(/assets/img/landing.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  height: 30vh;
-  width: 90vw;
-  background-size: contain;
-  padding: 0;
-  margin: 1rem; }
+  height: 100vh;
+  background-size: cover; }
+  .home-wrap .logo {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background-image: url(/assets/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+    width: 90vw;
+    background-size: contain;
+    padding: 0;
+    margin: 1rem; }
+  .home-wrap .site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .home-wrap .site-nav ul li {
+      display: inline-block;
+      margin-right: 10px; }
