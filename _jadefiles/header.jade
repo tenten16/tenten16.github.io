@@ -1,10 +1,18 @@
+mixin nav-content()
+  ul
+    li: a(href="#bride") The Bride
+    li: a(href="#groom") The Groom
+    li: a(href="#story") The Story
+
+.mobile-nav
+  +nav-content()
+  
 header
-  h1.logo Website for the wedding of Ronald Goyette to Portia Riley
-  
-  nav.site-nav
-    ul
-      li: a(href="#bride") The Bride
-      li: a(href="#groom") The Groom
-      li: a(href="#story") The Story
-  
-  
+  .header-position
+    h1.logo Website for the wedding of Ronald Goyette to Portia Riley
+    
+    nav.site-nav
+      +nav-content() 
+    
+    
+    .mobile-nav-toggle: span
