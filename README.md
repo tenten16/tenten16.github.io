@@ -1,24 +1,52 @@
-# TenTen16
+jekyll-gulp-sass-browser-sync
+=============================
 
-Tenten16 is a fairly simple Jekyll generated site. This project got its start as a follow along from the [{devtips}](https://www.youtube.com/user/DevTipsForDesigners) youtube channel and [THIS](https://www.youtube.com/watch?v=sJhhLvW-Xvg&list=PLqGj3iMvMa4KeBN2krBtcO3U90_7SOl-A) playlist. Thanks Travis Neilson!
+A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
 
-The two main reasons for this project are:
+Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
 
-1. To learn new things & have a website/blog without having to use Wordpress or some other CMS
+And here's a GIF showing the CSS injecting.
+
+![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+
+## System Preparation
+
+To use this starter project, you'll need the following things installed on your machine.
+
+1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
+2. [NodeJS](http://nodejs.org) - use the installer.
+3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
+
+## Local Installation
+
+1. Clone this repo, or download it into a directory of your choice.
+2. Inside the directory, run `npm install`.
+
+## Usage
+
+**development mode**
+
+This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc etc.
+
+```shell
+$ gulp
+```
+
+**jekyll**
+
+As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
+
+## Deploy with Gulp
+
+You can easily deploy your site build to a gh-pages branch. First, follow the instructions at [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) to get your branch prepared for the deployment and to install the module. Then, in `gulpfile.js` you'll want to include something like the code below. `gulp.src()` needs to be the path to your final site folder, which by default will be `_site`. If you change the `destination` in your `_config.yml` file, be sure to reflect that in your gulpfile.
 
 
-  * Which lead to things like
-    * Git
-    * Static site generation
-    * SASS
-    * Jade
-    * Javascript
-    * markdown
-    * Some liquid
-    * working in command line
 
+```javascript
+var deploy = require("gulp-gh-pages");
 
-2 Because I'm getting married and we needed/wanted a website for that.
-
-
-What I wanted was a flexible site that was easy to create and maintain and did not require a data base. Also a site that I could host for next to nothing with a custom url. Now you could say that this was not the easiest approach and you may be right but I believe that if you are reading this you are smart enough to get it done. I'm a commercial roofer who knew just enough to use google and youtube and I got it done. I owe much to the above mentioned for anything here that could be considered a success.
+gulp.task("deploy", ["jekyll-build"], function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy());
+});
+```

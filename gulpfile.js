@@ -57,7 +57,7 @@ gulp.task('sass', function () {
 
 gulp.task('jade', function(){
   return gulp.src('_jadefiles/*.jade')
-  .pipe(jade())
+  .pipe(jade({ pretty: true }))
   .pipe(gulp.dest('_includes'));
 });
 
@@ -69,6 +69,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
+    gulp.watch('assets/js/**', ['jekyll-rebuild']);
 });
 
 /**
