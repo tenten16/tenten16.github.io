@@ -424,3 +424,26 @@ hr {
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
+
+.site-header h1 {
+  font-family: Allura;
+  letter-spacing: 0;
+  margin: 20px 0 0 20px; }
+
+.site-footer {
+  background-color: rgba(237, 255, 236, 0.5); }
+  .site-footer .credit {
+    font-family: Allura;
+    letter-spacing: 0;
+    color: rgba(115, 114, 109, 0.5);
+    text-align: right;
+    margin: 0;
+    padding: 10px 20px 5px 10px; }
+  .site-footer .notice {
+    font-family: roboto;
+    font-size: 10px;
+    text-align: right;
+    color: rgba(115, 114, 109, 0.5);
+    padding: 0 20px 10px 10px; }
+  .site-footer span {
+    color: rgba(6, 84, 104, 0.5); }

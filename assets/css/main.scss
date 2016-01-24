@@ -1,7 +1,10 @@
 // ---
 // # Main sass file
 // ---
-@import '0-vendor/normalize';
+@import "0-vendor/normalize";
 
-@import '1-base/vars';
-@import '1-base/base';
+@import "1-base/vars";
+@import "1-base/base";
+
+@import "2-sections/header";
+@import "2-sections/footer";
