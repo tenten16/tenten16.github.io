@@ -1,32 +1,28 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "name": "tenten16",
+  "version": "1.0.0",
+  "description": "For the marrage of Portia Riley to Ron Goyette",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "Ron Goyette",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.10.0",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-jade": "^1.1.0",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^2.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/tenten16/tenten16.github.io.git"
   },
   "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
+    "wedding"
   ],
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/tenten16/tenten16.github.io/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://tenten16.com"
 }

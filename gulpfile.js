@@ -3,7 +3,6 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-var jade        = require('gulp-jade');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -51,16 +50,6 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
-/*
-* Runs jade on .jade files in _jadefiles and spits out .html files to _includes
-*/
-
-gulp.task('jade', function(){
-  return gulp.src('_jadefiles/*.jade')
-  .pipe(jade({ pretty: true }))
-  .pipe(gulp.dest('_includes'));
-});
-
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -68,7 +57,6 @@ gulp.task('jade', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*'], ['jekyll-rebuild']);
-    gulp.watch('_jadefiles/*.jade', ['jade']);
     gulp.watch('assets/js/**', ['jekyll-rebuild']);
 });
 

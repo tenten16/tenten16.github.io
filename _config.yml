@@ -1,4 +1,17 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Portia + Ron
+email: ronandportia@gmail.com
+description: > # For the marrage of Ron Goyette to Portia Riley
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://tenten16.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules, gulpfile.js, package.json, assets/css/0-vendor, assets/css/1-base, assets/css/main.scss]
