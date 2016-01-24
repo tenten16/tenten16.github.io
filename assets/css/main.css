@@ -447,3 +447,15 @@ hr {
     padding: 0 20px 10px 10px; }
   .site-footer span {
     color: rgba(6, 84, 104, 0.5); }
+
+.hero {
+  height: 500px;
+  max-width: 1440px;
+  background-image: url(/assets/img/faceoff-large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.site-wrap {
+  max-width: 1440px;
+  margin: 0 auto; }
