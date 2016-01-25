@@ -426,14 +426,16 @@ hr {
   height: 0; }
 
 .site-header h1 {
-  font-family: Allura;
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 2em;
   letter-spacing: 0;
-  margin: 20px 0 0 20px; }
+  margin: 10px 10px 10px 0; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .site-header h1 {
     margin: 5px 0 0 5px;
-    font-size: 2em; } }
+    font-size: 1.5em; } }
 
 .site-footer {
   background-color: #EDFFEC;
@@ -441,7 +443,8 @@ hr {
           border-radius: 0 0 20px 20px;
   margin-bottom: 20px; }
   .site-footer .credit {
-    font-family: Allura;
+    font-family: roboto;
+    font-size: 10px;
     letter-spacing: 0;
     color: rgba(115, 114, 109, 0.5);
     text-align: right;
@@ -455,7 +458,7 @@ hr {
     padding: 0 20px 10px 10px; }
   .site-footer span {
     color: rgba(6, 84, 104, 0.5); }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     .site-footer {
       -webkit-border-radius: 0;
               border-radius: 0;
@@ -471,12 +474,18 @@ hr {
         text-align: center; } }
 
 .hero {
-  height: 50vh;
+  height: 100vh;
   max-width: 1440px;
-  background-image: url(/assets/img/faceoff-large.jpg);
+  background-image: url(/assets/img/faceoff.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+  @media (max-width: 768px) and (orientation: portrait) {
+    .hero {
+      height: 50vh; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
+    .hero {
+      height: 100vh; } }
 
 .spacer {
   height: 1000px; }
@@ -485,6 +494,6 @@ hr {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px 0 20px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     .site-wrap {
       padding: 0 5px 0 5px; } }
