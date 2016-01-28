@@ -521,7 +521,7 @@ hr {
     .stats .stat-box span {
       display: block;
       padding: 0 10px; }
-    .stats .stat-box .mbti, .stats .stat-box .enne {
+    .stats .stat-box .mbti {
       line-height: 0;
       font-size: 1.5em;
       font-family: Philosopher;
