@@ -441,6 +441,12 @@ hr {
   margin-left: auto;
   margin-right: auto; }
 
+/* Basic text styles
+   @mixin ========================================================================= */
+.section-title {
+  font-weight: 100;
+  text-align: center; }
+
 .site-header {
   width: 100vw;
   max-width: 1440px;
@@ -475,6 +481,7 @@ hr {
       display: none; } }
 
 .hero {
+  position: relative;
   height: -webkit-calc(100vh - 65px);
   height: calc(100vh - 65px);
   max-height: 784px;
@@ -488,6 +495,8 @@ hr {
       height: 50vh; } }
 
 .stats {
+  position: absolute;
+  bottom: 5%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -497,62 +506,84 @@ hr {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  max-height: 25px; }
-  .stats .stat-box {
+  max-width: 1440px;
+  margin: 0 auto; }
+  .stats .stat-box-p, .stats .stat-box-r {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%; }
-    .stats .stat-box span {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 200px;
+    width: 60px; }
+    .stats .stat-box-p span, .stats .stat-box-r span {
       display: block;
-      padding: 0 10px; }
-    .stats .stat-box .mbti {
-      line-height: 0;
-      font-size: 1.5em;
+      text-align: center;
+      padding: 5px 10px 15px 10px; }
+    .stats .stat-box-p .mbti, .stats .stat-box-r .mbti {
+      font-size: 1.2em;
       font-family: Philosopher;
-      line-height: 0;
-      padding-top: 10px; }
+      line-height: 0; }
+  .stats .stat-box-p {
+    -webkit-border-radius: 0 3px 3px 0;
+            border-radius: 0 3px 3px 0; }
+  .stats .stat-box-r {
+    -webkit-border-radius: 3px 0 0 3px;
+            border-radius: 3px 0 0 3px; }
 
-.callout-box .callout {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px 0 0 0;
-  background-color: #0ca2c8;
-  padding: 20px 0 20px 0; }
-  .callout-box .callout .annoc {
+.callout {
+  width: 100%;
+  max-width: 80%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 auto; }
+  .callout .annoc {
     text-align: center;
+    text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 5px;
-    margin: 0; }
-  .callout-box .callout .date {
+    margin: 0;
+    padding: 0; }
+  .callout .date {
+    color: white;
     text-align: center;
-    font-size: 3em;
-    font-weight: 200;
-    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 15px;
+    margin: 0;
+    padding: 0; }
+
+.island {
+  background-color: #EDFFEC;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px; }
+
+.site-footer {
+  font-size: .7em;
+  color: #222;
+  text-align: center; }
+  .site-footer .credit {
+    margin: 0; }
+    .site-footer .credit span {
+      color: #0ca2c8; }
+  .site-footer .notice {
     margin: 0; }
