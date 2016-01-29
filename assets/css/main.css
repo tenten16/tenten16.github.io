@@ -527,7 +527,7 @@ hr {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     height: 200px;
     width: 60px; }
     .stats .stat-box-p span, .stats .stat-box-r span {
