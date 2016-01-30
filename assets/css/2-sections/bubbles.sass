@@ -1,6 +1,6 @@
 .bubble-left
-  margin: 10px 0 10px 0
-  width: 100%
+  margin: 10px 3% 10px 1%
+  width: 96%
   position: relative
   border-radius: 0.5em
   padding: 1em
@@ -20,8 +20,8 @@
     z-index: -1
 
 .bubble-right
-  margin: 10px 0
-  width: 100%
+  margin: 10px 1% 10px 3%
+  width: 96%
   position: relative
   border-radius: 0.5em
   padding: 1em
@@ -52,33 +52,51 @@
 .bubble-right.bubble-fill
   background: nth($bgColor, 2)
   color: nth($color, 2)
+  text-align: right
   &:before, &:after
     transform: translate(50%, -50%) rotate(45deg)
     background: nth($bgColor, 2)
 
-.bubble-wrap
-  margin: 0 2em 0 2em
+.bubble-heading-l,.bubble-heading-r
+  font-weight: 100
+  font-size: 3em
 
   @media (max-width: 768px)
-    margin: 0 1em
+    font-size: 2em
 
-.bubble-heading
+  @media (max-width: 420px)
+    font-size: 1.5em
+
+.bubble-heading-l
   text-align: center
   color: nth($color, 1)
 
+.bubble-heading-r
+  text-align: center
+  color: nth($color, 2)
+
 .bubble
-  margin: 10px 0 10px 0
+  margin: 0
   width: 100%
   position: relative
-  border-radius: 0.5em
-  padding: 1em
+  //border-radius: 0.5em
+  padding: 0 3em 3em 3em
   box-sizing: border-box
   box-shadow: $shadow
-  background-color: #5bb7d5
-  border: 1px solid $borderColor
+  background-color: #cdd3d9
+  border-bottom: 1px solid $borderColor
 
-.bubble-wrap-wide
-  margin: 0 1.3em 0 1.3em
+  @media (max-width: 768px)
+    padding: 0 1em 1em 1em
+
+.bubble-wrap
+  margin: 0 auto
+  max-width: 1440px
+
+  @media (max-width: 1440px)
+    margin: 0 1em
+
+//bubble-wrap-wide
 
   @media (max-width: 768px)
     margin: 0 .5em
