@@ -447,6 +447,15 @@ hr {
   font-weight: 100;
   text-align: center; }
 
+.button {
+  text-decoration: none;
+  background-color: #EDFFEC;
+  border: 1px solid #EDFFEC;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px; }
+
 .site-header {
   width: 100vw;
   max-width: 1440px;
@@ -489,7 +498,7 @@ hr {
   background-image: url(/assets/img/faceoff.jpg);
   background-position: center center;
   background-size: cover;
-  margin: 0 auto 20px auto; }
+  margin: 0 auto 0 auto; }
   @media (max-width: 1024px) and (orientation: portrait) {
     .hero {
       height: 50vh; } }
@@ -527,7 +536,7 @@ hr {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     height: 200px;
     width: 60px; }
     .stats .stat-box-p span, .stats .stat-box-r span {
@@ -571,11 +580,137 @@ hr {
     margin: 0;
     padding: 0; }
 
+<<<<<<< HEAD
 .island {
   background-color: #A0CDDC;
+=======
+.stories {
+  width: 100vw;
+>>>>>>> origin/master
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px; }
+  margin: 0 auto 0 auto; }
+  .stories .talkbubble-r {
+    position: relative;
+    width: 95%;
+    max-width: 1380px;
+    -webkit-border-radius: 0 5px 5px 0;
+            border-radius: 0 5px 5px 0;
+    border: solid #ececec;
+    background: #ececec;
+    margin: 20px 0 0 5px; }
+    .stories .talkbubble-r:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 10px;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-right: 30px solid #ececec;
+      border-bottom: 15px solid transparent; }
+    .stories .talkbubble-r .quote-her h1 {
+      text-align: left;
+      font-family: philosipher;
+      font-size: 32px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-style: italic;
+      color: #222;
+      padding: 10px; }
+  .stories .talkbubble-l {
+    position: relative;
+    width: 95%;
+    max-width: 1380px;
+    -webkit-border-radius: 5px 0 0 5px;
+            border-radius: 5px 0 0 5px;
+    border: solid #b9b9b9;
+    background: #b9b9b9;
+    margin: 20px 0 0 auto; }
+    .stories .talkbubble-l:before {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 10px;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-left: 30px solid #b9b9b9;
+      border-bottom: 15px solid transparent; }
+    .stories .talkbubble-l .quote-him h1 {
+      text-align: right;
+      font-family: philosipher;
+      font-size: 32px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-style: italic;
+      color: #222;
+      padding: 10px; }
+
+.local {
+  max-width: 1440px;
+  margin: 0 auto; }
+  .local h2 {
+    text-align: center;
+    color: #5bb7d5;
+    padding: 100px;
+    margin: 0; }
+  .local .thumbs-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .local .thumbs-wrap .thumb-container {
+      margin: 0 auto;
+      padding-bottom: 100px; }
+      .local .thumbs-wrap .thumb-container .thumb-unit {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        height: 400px;
+        width: 400px;
+        overflow: hidden;
+        background-image: url(/assets/img/local-stuff/go/thumb-go.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+        .local .thumbs-wrap .thumb-container .thumb-unit .thumb-overlay {
+          position: absolute;
+          top: 80%;
+          right: 0px;
+          left: 0px;
+          height: 100%;
+          background: rgba(91, 183, 213, 0.5);
+          text-align: center;
+          -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out; }
+          .local .thumbs-wrap .thumb-container .thumb-unit .thumb-overlay strong {
+            display: block;
+            padding: 20px;
+            color: white;
+            font-size: 32px;
+            font-weight: 100; }
+          .local .thumbs-wrap .thumb-container .thumb-unit .thumb-overlay p {
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: 100;
+            color: white;
+            padding: 0 15px; }
+        .local .thumbs-wrap .thumb-container .thumb-unit:hover .thumb-overlay {
+          position: absolute;
+          top: 0%;
+          right: 0px;
+          left: 0px; }
 
 .site-footer {
   font-size: .7em;

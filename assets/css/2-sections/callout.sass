@@ -1,26 +1,74 @@
-// .callout-box
-//   max-width: 60%
-//   bottom: 8%
-//   left: 50%
-//   background-color: pink
-//
-//   .callout
-//     display: flex
-//     flex-direction: column
-//     justify-content: center
-//     margin: 0
-//     background-color: $bc-light
-//     padding: 20px 0 20px 0
-//
-//     .annoc
-//       text-align: center
-//       font-weight: 100
-//       letter-spacing: 5px
-//       margin: 0
-//
-//     .date
-//       text-align: center
-//       font-size: 3em
-//       font-weight: 200
-//       letter-spacing: 10px
-//       margin: 0
+.stories
+  width: 100vw
+  max-width: 1440px
+  margin: 0 auto 0 auto
+
+  .talkbubble-r
+    position: relative
+    width: 95%
+    max-width: 1380px
+    // height: 125px
+    //padding: 20px
+    border-radius: 0 5px 5px 0
+    border: solid $sb-light
+    background: $sb-light
+    margin: 20px 0 0 5px
+
+    &:before
+      content: ""
+      position: absolute
+      right: 100%
+      top: 10px
+      width: 0
+      height: 0
+      border-top: 15px solid transparent
+      border-right: 30px solid $sb-light
+      border-bottom: 15px solid transparent
+
+    .quote-her
+
+      h1
+        text-align: left
+        font-family: philosipher
+        font-size: 32px
+        letter-spacing: 5px
+        text-transform: uppercase
+        font-weight: 500
+        font-style: italic
+        color: $font-base
+        padding: 10px
+
+  .talkbubble-l
+    position: relative
+    width: 95%
+    max-width: 1380px
+    // height: 125px
+    //padding: 10px
+    border-radius: 5px 0 0 5px
+    border: solid $sb-dark
+    background: $sb-dark
+    margin: 20px 0 0 auto
+
+    &:before
+      content: ""
+      position: absolute
+      left: 100%
+      top: 10px
+      width: 0
+      height: 0
+      border-top: 15px solid transparent
+      border-left: 30px solid $sb-dark
+      border-bottom: 15px solid transparent
+
+    .quote-him
+
+      h1
+        text-align: right
+        font-family: philosipher
+        font-size: 32px
+        letter-spacing: 5px
+        text-transform: uppercase
+        font-weight: 500
+        font-style: italic
+        color: $font-base
+        padding: 10px
