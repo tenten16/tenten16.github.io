@@ -434,7 +434,7 @@ hr {
   border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
-  margin: 10px 0 30px;
+  margin: 5px;
   height: 0; }
 
 a {
@@ -545,9 +545,10 @@ a:link, a:visited, a:hover, a:active {
         .hero .annoc p {
           font-size: 1em; } }
     .hero .annoc p:first-of-type {
-      font-family: playfair display;
+      font-family: roboto;
       font-style: normal;
       font-size: 4em;
+      letter-spacing: 5px;
       color: #fff; }
       @media (max-width: 420px) {
         .hero .annoc p:first-of-type {
@@ -831,13 +832,15 @@ a:link, a:visited, a:hover, a:active {
   font-weight: 900;
   text-align: center;
   text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1); }
+  @media (max-width: 420px) {
+    .ban-bold {
+      font-size: 1.4em; } }
 
 .ban-sub {
   font-family: playfair display;
   font-style: italic;
   text-align: center;
-  font-size: 1.2em;
-  font-weight: 300; }
+  font-size: 1em; }
 
 .site-footer {
   font-size: .7em;
