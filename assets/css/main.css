@@ -443,33 +443,10 @@ a {
 a:link, a:visited, a:hover, a:active {
   color: #222; }
 
-hr {
-  display: block;
-  width: 50%;
-  color: #222;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto; }
-
 /* Basic text styles
    @mixin ========================================================================= */
-.section-title {
-  font-weight: 100;
-  text-align: center; }
-
-.button {
-  text-decoration: none;
-  background-color: #EDFFEC;
-  border: 1px solid #EDFFEC;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  margin-top: 10px;
-  padding: 5px; }
-
 .site-header {
   width: 100vw;
-  max-width: 1440px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -501,46 +478,82 @@ hr {
       display: none; } }
 
 .hero {
+  margin: 0 auto;
   position: relative;
-  height: -webkit-calc(100vh - 65px);
-  height: calc(100vh - 65px);
-  max-height: 784px;
-  max-width: 1440px;
-  background-image: url(/assets/img/faceoff.jpg);
-  background-position: center center;
-  background-size: cover;
-  margin: 0 auto 0 auto; }
-  @media (max-width: 1024px) and (orientation: portrait) {
-    .hero {
-      height: 50vh; } }
-
-.callout {
-  width: 100%;
-  max-width: 80%;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin: 0 auto; }
-  .callout .annoc {
-    font-size: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 5px;
-    margin: 0;
-    padding: 0; }
-  .callout .date {
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 60px;
-    font-weight: 500;
-    letter-spacing: 15px;
-    margin: 0;
-    padding: 0; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .hero .portia {
+    height: -webkit-calc(100vh - 65px);
+    height: calc(100vh - 65px);
+    width: 50%;
+    background-image: url(/assets/img/portia.jpg);
+    background-position: center top;
+    background-size: cover; }
+    @media (max-width: 1024px) and (orientation: portrait) {
+      .hero .portia {
+        height: 50vh; } }
+  .hero .ron {
+    height: -webkit-calc(100vh - 65px);
+    height: calc(100vh - 65px);
+    width: 50%;
+    background-image: url(/assets/img/ron.jpg);
+    background-position: center center;
+    background-size: cover; }
+    @media (max-width: 1024px) and (orientation: portrait) {
+      .hero .ron {
+        height: 50vh; } }
+  .hero .annoc {
+    position: absolute;
+    height: 100%;
+    -webkit-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%); }
+    @media (max-width: 420px) {
+      .hero .annoc {
+        -webkit-transform: translate(-50%, 65%);
+            -ms-transform: translate(-50%, 65%);
+                transform: translate(-50%, 65%); } }
+    .hero .annoc .names {
+      font-size: 10em;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0; }
+      @media (max-width: 420px) {
+        .hero .annoc .names {
+          font-size: 2em; } }
+    .hero .annoc p {
+      font-family: playfair display;
+      font-style: italic;
+      font-size: 2em;
+      text-align: center;
+      margin: 0;
+      padding: 0; }
+      @media (max-width: 420px) {
+        .hero .annoc p {
+          font-size: 1em; } }
+    .hero .annoc p:first-of-type {
+      font-family: playfair display;
+      font-style: normal;
+      font-size: 4em;
+      color: #fff; }
+      @media (max-width: 420px) {
+        .hero .annoc p:first-of-type {
+          font-size: 1em; } }
+    .hero .annoc hr {
+      margin: 0; }
 
 .bubble-left {
   margin: 10px 3% 10px 1%;
@@ -650,10 +663,10 @@ hr {
 
 .bubble-wrap {
   margin: 0 auto;
-  max-width: 1440px; }
+  padding: 10px 0; }
   @media (max-width: 1440px) {
     .bubble-wrap {
-      margin: 0 1em; } }
+      padding: 10px 1em; } }
 
 .stats {
   display: -webkit-box;
@@ -760,7 +773,7 @@ hr {
       height: 2em;
       width: 2em;
       margin: auto;
-      font-family: philosipher;
+      font-family: playfair display;
       line-height: 2;
       font-size: 24px;
       color: #333333; }
@@ -813,11 +826,18 @@ hr {
 
 .ban-bold {
   color: #fff;
+  font-family: playfair display;
   font-size: 60px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 900;
   text-align: center;
   text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1); }
+
+.ban-sub {
+  font-family: playfair display;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300; }
 
 .site-footer {
   font-size: .7em;
@@ -829,7 +849,3 @@ hr {
       color: #0ca2c8; }
   .site-footer .notice {
     margin: 0; }
-
-.site-wrap {
-  margin: 0 auto 0 auto;
-  max-width: 1440px; }
