@@ -531,6 +531,9 @@ a:link, a:visited, a:hover, a:active {
       text-transform: uppercase;
       margin: 0;
       padding: 0; }
+      @media (max-width: 1400px) {
+        .hero .annoc .names {
+          font-size: 5em; } }
       @media (max-width: 420px) {
         .hero .annoc .names {
           font-size: 2em; } }
