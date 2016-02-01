@@ -4,6 +4,7 @@ function initMap() {
   var map = new google.maps.Map(mapDiv, {
     center: myLatLng,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
+    draggable: false,
     scrollwheel: false,
     zoom: 17
   });
