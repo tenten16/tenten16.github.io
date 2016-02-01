@@ -1,0 +1,38 @@
+// =============================================================================
+// Heading
+// =============================================================================
+
+.none, .block-1, .block-2, .block-3
+  text-align: center
+  text-transform: uppercase
+  // font-weight: 500
+  font-family: playfair display
+  display: block
+  padding: 1em
+  margin: 0
+
+.block-1
+  color: nth($color, 2)
+  background-color: nth($bgColor, 2)
+
+.block-2
+  color: nth($color, 1)
+  background-color: nth($bgColor, 3)
+
+.block-3
+  color: nth($color, 2)
+  background-color: nth($bgColor, 2)
+
+// =============================================================================
+// Images
+// =============================================================================
+
+.img-holder
+  margin: 10px
+
+.img-flex-large
+  display: block
+  max-width: 100%
+  border-radius: .5em
+  border: 1px solid $borderColor
+  margin: 0 auto
