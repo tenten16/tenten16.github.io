@@ -4,8 +4,8 @@ function initMap() {
   var map = new google.maps.Map(mapDiv, {
     center: myLatLng,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
-    draggable: false,
     scrollwheel: false,
+    draggable: false,
     zoom: 17
   });
   var image = 'assets/img/icons/g-map-pin.png';
