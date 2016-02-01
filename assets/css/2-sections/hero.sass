@@ -1,5 +1,4 @@
 .hero
-  //max-width: 1440px
   margin: 0 auto
   position: relative
   display: flex
@@ -8,7 +7,6 @@
 
   .portia
     height: calc(100vh - 65px)
-    //max-height: 784px
     width: 50%
     background:
       image: url(/assets/img/portia.jpg)
@@ -20,11 +18,10 @@
 
   .ron
     height: calc(100vh - 65px)
-    //max-height: 784px
     width: 50%
     background:
       image: url(/assets/img/ron.jpg)
-      position: center center
+      position: center top
       size: cover
 
     @media (max-width: 1024px)and(orientation: portrait)
@@ -33,9 +30,9 @@
   .annoc
     position: absolute
     height: 100%
-    transform: translate(-50%, 50%)
+    transform: translate(-50%, 60%)
 
-    @media (max-width: 420px)
+    @media (max-width: 630px)
       transform: translate(-50%, 65%)
 
     .names
@@ -46,9 +43,22 @@
       margin: 0
       padding: 0
 
+      @media (max-width: 2200px)
+        font-size: 9em
+      @media (max-width: 2030px)
+          font-size: 8em
+      @media (max-width: 1840px)
+        font-size: 7em
+      @media (max-width: 1680px)
+        font-size: 6em
       @media (max-width: 1400px)
         font-size: 5em
-
+      @media (max-width: 1280px)
+        font-size: 4em
+      @media (max-width: 930px)
+        font-size: 3em
+      @media (max-width: 730px)
+        font-size: 2.5em
       @media (max-width: 420px)
         font-size: 2em
 
@@ -60,6 +70,8 @@
       margin: 0
       padding: 0
 
+      @media (max-width: 720px)
+        font-size: 1.5em
       @media (max-width: 420px)
         font-size: 1em
 
@@ -69,9 +81,14 @@
       font-size: 4em
       letter-spacing: 5px
       color: #fff
-
+      @media (max-width: 1100px)
+        font-size: 2em
+      @media (max-width: 720px)
+        font-size: 1.5em
       @media (max-width: 420px)
         font-size: 1em
 
     hr
-      margin: 0
+      display: block
+      width: 75%
+      margin: 0.2em auto

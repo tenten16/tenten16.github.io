@@ -1,9 +1,9 @@
 .bubble-left
-  margin: 10px 3% 10px 1%
+  margin: 10px 0.5% 10px 1%
   width: 96%
   position: relative
   border-radius: 0.5em
-  padding: 1em
+  padding: 1em 2em
   box-sizing: border-box
   box-shadow: $shadow
   &:before, &:after
@@ -18,13 +18,15 @@
   &:before
     box-shadow: $shadow
     z-index: -1
+  @media (max-width: 1024px)
+    margin: 10px 1% 10px 3%
 
 .bubble-right
-  margin: 10px 1% 10px 3%
+  margin: 10px 1% 10px 0.5%
   width: 96%
   position: relative
   border-radius: 0.5em
-  padding: 1em
+  padding: 1em 2em
   box-sizing: border-box
   box-shadow: $shadow
   &:before, &:after
@@ -39,6 +41,8 @@
   &:before
     box-shadow: $shadow
     z-index: -1
+  @media (max-width: 1024px)
+    margin: 10px 3% 10px 1%
 
 .bubble-left.bubble-border
   border: 1px solid $borderColor
@@ -58,12 +62,14 @@
     background: nth($bgColor, 2)
 
 .bubble-heading-l,.bubble-heading-r
-  font-weight: 100
+  font-family: playfair display
   font-size: 3em
+  padding: 1em
 
-  @media (max-width: 768px)
+  @media (max-width: 1440px)
     font-size: 2em
-
+  @media (max-width: 1440px)
+    font-size: 1.7em
   @media (max-width: 420px)
     font-size: 1.5em
 
@@ -80,7 +86,7 @@
   width: 100%
   position: relative
   //border-radius: 0.5em
-  padding: 0 3em 3em 3em
+  padding: 3em 3em 3em 3em
   box-sizing: border-box
   box-shadow: $shadow
   background-color: #cdd3d9
@@ -90,15 +96,22 @@
     padding: 0 1em 1em 1em
 
 .bubble-wrap
-  margin: 0 auto
-  padding: 10px 0
-  //max-width: 1440px
-  //background-color: pink
+  display: flex
+  flex-direction: row
+  justify-content: space-between
 
-  @media (max-width: 1440px)
-    padding: 10px 1em
+  @media (max-width: 1024px)
+    display: block
+    margin: 0 auto
+    padding: 10px 0
 
-//bubble-wrap-wide
-
-  @media (max-width: 768px)
-    margin: 0 .5em
+.button
+  text-align: center
+  a
+    display: inline-block
+    padding: 5px 10px
+    border-radius: .2em
+    box-sizing: border-box
+    box-shadow: $shadow
+    border: 1px solid $borderColor
+    background-color: pink

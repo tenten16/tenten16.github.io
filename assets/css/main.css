@@ -508,7 +508,7 @@ a:link, a:visited, a:hover, a:active {
     height: calc(100vh - 65px);
     width: 50%;
     background-image: url(/assets/img/ron.jpg);
-    background-position: center center;
+    background-position: center top;
     background-size: cover; }
     @media (max-width: 1024px) and (orientation: portrait) {
       .hero .ron {
@@ -516,10 +516,10 @@ a:link, a:visited, a:hover, a:active {
   .hero .annoc {
     position: absolute;
     height: 100%;
-    -webkit-transform: translate(-50%, 50%);
-        -ms-transform: translate(-50%, 50%);
-            transform: translate(-50%, 50%); }
-    @media (max-width: 420px) {
+    -webkit-transform: translate(-50%, 60%);
+        -ms-transform: translate(-50%, 60%);
+            transform: translate(-50%, 60%); }
+    @media (max-width: 630px) {
       .hero .annoc {
         -webkit-transform: translate(-50%, 65%);
             -ms-transform: translate(-50%, 65%);
@@ -531,9 +531,30 @@ a:link, a:visited, a:hover, a:active {
       text-transform: uppercase;
       margin: 0;
       padding: 0; }
+      @media (max-width: 2200px) {
+        .hero .annoc .names {
+          font-size: 9em; } }
+      @media (max-width: 2030px) {
+        .hero .annoc .names {
+          font-size: 8em; } }
+      @media (max-width: 1840px) {
+        .hero .annoc .names {
+          font-size: 7em; } }
+      @media (max-width: 1680px) {
+        .hero .annoc .names {
+          font-size: 6em; } }
       @media (max-width: 1400px) {
         .hero .annoc .names {
           font-size: 5em; } }
+      @media (max-width: 1280px) {
+        .hero .annoc .names {
+          font-size: 4em; } }
+      @media (max-width: 930px) {
+        .hero .annoc .names {
+          font-size: 3em; } }
+      @media (max-width: 730px) {
+        .hero .annoc .names {
+          font-size: 2.5em; } }
       @media (max-width: 420px) {
         .hero .annoc .names {
           font-size: 2em; } }
@@ -544,6 +565,9 @@ a:link, a:visited, a:hover, a:active {
       text-align: center;
       margin: 0;
       padding: 0; }
+      @media (max-width: 720px) {
+        .hero .annoc p {
+          font-size: 1.5em; } }
       @media (max-width: 420px) {
         .hero .annoc p {
           font-size: 1em; } }
@@ -553,19 +577,27 @@ a:link, a:visited, a:hover, a:active {
       font-size: 4em;
       letter-spacing: 5px;
       color: #fff; }
+      @media (max-width: 1100px) {
+        .hero .annoc p:first-of-type {
+          font-size: 2em; } }
+      @media (max-width: 720px) {
+        .hero .annoc p:first-of-type {
+          font-size: 1.5em; } }
       @media (max-width: 420px) {
         .hero .annoc p:first-of-type {
           font-size: 1em; } }
     .hero .annoc hr {
-      margin: 0; }
+      display: block;
+      width: 75%;
+      margin: 0.2em auto; }
 
 .bubble-left {
-  margin: 10px 3% 10px 1%;
+  margin: 10px 0.5% 10px 1%;
   width: 96%;
   position: relative;
   -webkit-border-radius: 0.5em;
           border-radius: 0.5em;
-  padding: 1em;
+  padding: 1em 2em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
@@ -585,14 +617,17 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
     z-index: -1; }
+  @media (max-width: 1024px) {
+    .bubble-left {
+      margin: 10px 1% 10px 3%; } }
 
 .bubble-right {
-  margin: 10px 1% 10px 3%;
+  margin: 10px 1% 10px 0.5%;
   width: 96%;
   position: relative;
   -webkit-border-radius: 0.5em;
           border-radius: 0.5em;
-  padding: 1em;
+  padding: 1em 2em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
@@ -612,6 +647,9 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
     z-index: -1; }
+  @media (max-width: 1024px) {
+    .bubble-right {
+      margin: 10px 3% 10px 1%; } }
 
 .bubble-left.bubble-border {
   border: 1px solid #aaaaaa;
@@ -633,11 +671,15 @@ a:link, a:visited, a:hover, a:active {
     background: #333333; }
 
 .bubble-heading-l, .bubble-heading-r {
-  font-weight: 100;
-  font-size: 3em; }
-  @media (max-width: 768px) {
+  font-family: playfair display;
+  font-size: 3em;
+  padding: 1em; }
+  @media (max-width: 1440px) {
     .bubble-heading-l, .bubble-heading-r {
       font-size: 2em; } }
+  @media (max-width: 1440px) {
+    .bubble-heading-l, .bubble-heading-r {
+      font-size: 1.7em; } }
   @media (max-width: 420px) {
     .bubble-heading-l, .bubble-heading-r {
       font-size: 1.5em; } }
@@ -654,7 +696,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
   width: 100%;
   position: relative;
-  padding: 0 3em 3em 3em;
+  padding: 3em 3em 3em 3em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
@@ -666,11 +708,38 @@ a:link, a:visited, a:hover, a:active {
       padding: 0 1em 1em 1em; } }
 
 .bubble-wrap {
-  margin: 0 auto;
-  padding: 10px 0; }
-  @media (max-width: 1440px) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 1024px) {
     .bubble-wrap {
-      padding: 10px 1em; } }
+      display: block;
+      margin: 0 auto;
+      padding: 10px 0; } }
+
+.button {
+  text-align: center; }
+  .button a {
+    display: inline-block;
+    padding: 5px 10px;
+    -webkit-border-radius: .2em;
+            border-radius: .2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    border: 1px solid #aaaaaa;
+    background-color: pink; }
 
 .stats {
   display: -webkit-box;
@@ -702,6 +771,7 @@ a:link, a:visited, a:hover, a:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 10px;
+    width: 45%;
     -webkit-border-radius: 0 0 0.5em 0.5em;
             border-radius: 0 0 0.5em 0.5em;
     -webkit-box-sizing: border-box;
@@ -711,8 +781,23 @@ a:link, a:visited, a:hover, a:active {
     border-left: 1px solid #aaaaaa;
     border-right: 1px solid #aaaaaa;
     border-bottom: 1px solid #aaaaaa;
-    width: 45%;
     background-color: rgba(255, 255, 255, 0.1); }
+    @media (max-width: 1330px) {
+      .stats .stat-box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: auto; } }
     .stats .stat-box .male {
       height: 2em;
       width: 2em;
@@ -830,9 +915,9 @@ a:link, a:visited, a:hover, a:active {
 
 .ban-bold {
   color: #fff;
-  font-family: playfair display;
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 100;
+  text-transform: uppercase;
   text-align: center;
   text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1); }
   @media (max-width: 420px) {
@@ -844,6 +929,44 @@ a:link, a:visited, a:hover, a:active {
   font-style: italic;
   text-align: center;
   font-size: 1em; }
+
+.story-1 {
+  margin: 10px; }
+
+.story {
+  display: block;
+  max-width: 100%;
+  -webkit-border-radius: .5em;
+          border-radius: .5em;
+  border: 1px solid #aaaaaa;
+  margin: 0 auto; }
+
+.bubble-2 {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  padding: 3em 3em 3em 3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  background-color: #5bb7d5;
+  border-bottom: 1px solid #aaaaaa; }
+  @media (max-width: 768px) {
+    .bubble-2 {
+      padding: 0 1em 1em 1em; } }
+
+.content-container {
+  margin-top: 10px;
+  width: 100%;
+  height: 800px;
+  background: white;
+  text-align: center; }
+
+#g-map {
+  width: 100%;
+  height: 800px;
+  background-color: #333333; }
 
 .site-footer {
   font-size: .7em;
