@@ -475,8 +475,9 @@ a:link, a:visited, a:hover, a:active {
   font-family: playfair display;
   font-size: 1.5em;
   text-align: center;
-  padding-bottom: 20px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin: 0;
+  padding-bottom: 20px; }
 
 /* =============================================================================
  Image Styles
@@ -880,7 +881,7 @@ a:link, a:visited, a:hover, a:active {
     z-index: -1; }
 
 .quote-left-heading, .quote-right-heading {
-  font-family: playfair display;
+  font-family: roboto;
   font-size: 2.5em;
   text-align: center;
   padding: 1em; }
@@ -926,13 +927,10 @@ a:link, a:visited, a:hover, a:active {
  Form (based on: http://codepen.io/rexkirby/pen/Fdnlz)
  @mixin ============================================================================*/
 #form-main {
-  width: 100%;
-  max-height: 75vh;
   background-image: url(/assets/img/form-bg-1.jpg);
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0 0 2em 0; }
+  background-repeat: no-repeat; }
 
 #container {
   background-color: rgba(255, 255, 255, 0.3);
@@ -943,7 +941,7 @@ a:link, a:visited, a:hover, a:active {
   -webkit-border-radius: .5em;
           border-radius: .5em;
   width: 90%;
-  margin: 3em auto 0em auto; }
+  margin: 2em auto; }
 
 .feedback-input {
   color: #3c3c3c;
@@ -974,30 +972,30 @@ a:link, a:visited, a:hover, a:active {
   border: #5bb7d5 solid 3px; }
 
 /* Icons ---------------------------------- */
-#name {
+#Field207 {
   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat; }
-  #name:focus {
+  #Field207:focus {
     background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
     background-size: 30px 30px;
     background-position: 8px 5px;
     background-position: 11px 8px;
     background-repeat: no-repeat; }
 
-#email {
+#Field3 {
   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat; }
-  #email:focus {
+  #Field3:focus {
     background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
     background-size: 30px 30px;
     background-position: 11px 8px;
     background-repeat: no-repeat; }
 
-#comment {
+#Field205 {
   background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
@@ -1013,7 +1011,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {
   background-color: white; }
 
 #saveForm {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: roboto;
   float: left;
   width: 100%;
   border: #fbfbfb solid 4px;

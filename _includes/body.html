@@ -85,7 +85,7 @@ Story section
 
 <section class="story" id="story">
 
-  <h2 class="none">But look at them now.</h2>
+  <h2 class="none">The good news is that first impressions where not long lived.</h2>
 
   <figure class="img-holder">
     <img class="img-flex-large" src="/assets/img/us-1.jpg" />
@@ -132,29 +132,37 @@ Wufoo Form
 ============================================================================ -->
 <div id="form-main">
   <header id="header">
-    <h2 class="block-3">RSVP YOUR INVATATION</h2>
+    <h2 class="block-3">RSVP YOUR INVITATION</h2>
     <p class="sub-alt">If your invitation was addressed to multiple members of the same household.  Please include all names of those attending in the comment box below.</p>
   </header>
 
   <div id="container">
 
-    <form class="form" id="form1">
+    <form id="form1" name="form1" class="form" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ronandportia.wufoo.com/forms/z18c6z0d0isocp2/#public">
 
       <p class="name">
-        <input name="name" type="text" class="notranslate feedback-input" placeholder="Name" id="name" tabindex="1"/>
+        <input id="Field207" name="Field207" type="text" class="feedback-input" placeholder="Name" value="" maxlength="255" tabindex="1" onkeyup="" required />
       </p>
 
       <p class="email">
-        <input name="email" type="text" class="notranslate feedback-input" id="email" placeholder="Email" tabindex="2"/>
+        <input id="Field3" name="Field3" type="email" spellcheck="false" class="feedback-input" value="" maxlength="255" placeholder="Email" tabindex="2" required />
       </p>
 
-      <select id="dropdown" name="dropdown" tabindex="3">
-        <option value="Attending" selected="selected">Attending</option>
-        <option value="Not Attending">Not Attending</option>
-      </select>
+      <div>
+        <select id="Field204" name="Field204" class="field select large" tabindex="3" >
+          <option
+            value="Attending" selected="selected">
+            Attending
+          </option>
+          <option
+            value="Not Attending" >
+            Not Attending
+          </option>
+        </select>
+      </div>
 
       <p class="text">
-        <textarea name="text" class="notranslate feedback-input" id="comment" placeholder="Comment" tabindex="4"></textarea>
+        <textarea id="Field205" name="Field205" class="feedback-input" spellcheck="true" rows="10" cols="50" placeholder="Comment" tabindex="4" onkeyup=""></textarea>
       </p>
 
       <p class="form-text">
@@ -162,7 +170,7 @@ Wufoo Form
       </p>
 
       <div class="submit">
-        <input type="submit" name="saveForm" value="SEND" id="saveForm"/>
+        <input id="saveForm" name="saveForm" class="" type="submit" value="Submit"/>
         <div class="ease"></div>
       </div>
 
@@ -176,9 +184,6 @@ Wufoo Form
         Form powered by:<a href="https://www.wufoo.com/"> Wufoo</a>
       </p>
     </form>
-  </div>
-  <div class="spacer">
-
   </div>
 <!-- ===========================================================================
 Footer section
