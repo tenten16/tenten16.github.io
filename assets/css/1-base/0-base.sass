@@ -1,11 +1,79 @@
-// =============================================================================
-// Heading
-// =============================================================================
+/* =============================================================================
+ Start Custom Styles
+ =============================================================================*/
+*
+  margin: 0
+
+html, body
+	height: 100%
+
+body
+  font-family: Roboto, sans-serif
+  font-size: 16px
+  font-weight: 100
+  position: relative
+  line-height: 1.6
+  color: nth($font, 2)
+  background: #ffffff
+
+p
+  margin: 0 0 20px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 5px
+  height: 0
+
+a
+  text-decoration: none
+
+a:link, a:visited, a:hover, a:active
+ color: nth($color, 1)
+
+/* =============================================================================
+ Headings
+ =============================================================================*/
+.gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6
+  color: nth($font, 2)
+  font-weight: bold
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+  font-size: 68px
+  line-height: 1.05
+  letter-spacing: -1px
+
+.large, h2
+  font-size: 42px
+  line-height: 1.14
+
+.bigger, h3
+  font-size: 26px
+  line-height: 1.38
+
+.big, h4
+  font-size: 22px
+  line-height: 1.38
+
+.small, small
+  font-size: 10px
+  line-height: 1.2
 
 .none, .block-1, .block-2, .block-3
   text-align: center
   text-transform: uppercase
-  // font-weight: 500
   font-family: playfair display
   display: block
   padding: 1em
@@ -20,13 +88,27 @@
   background-color: nth($bgColor, 3)
 
 .block-3
-  color: nth($color, 2)
-  background-color: nth($bgColor, 2)
+  color: nth($color, 1)
+  background-color: #fff
 
-// =============================================================================
-// Images
-// =============================================================================
+/* =============================================================================
+ Paragraph Styles
+ =============================================================================*/
+.sub
+  font-family: playfair display
+  font-size: 1.5em
+  text-align: center
 
+.sub-alt
+  font-family: playfair display
+  font-size: 1.5em
+  text-align: center
+  padding-bottom: 20px
+  background-color: #fff
+
+/* =============================================================================
+ Image Styles
+ =============================================================================*/
 .img-holder
   margin: 10px
 
@@ -36,3 +118,6 @@
   border-radius: .5em
   border: 1px solid $borderColor
   margin: 0 auto
+
+.spacer
+  height: 1000px

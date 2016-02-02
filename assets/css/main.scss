@@ -6,13 +6,13 @@
 
 @import "1-base/vars";
 @import "1-base/0-base";
-@import "1-base/base";
 
 @import "2-sections/header";
 @import "2-sections/hero";
-@import "2-sections/bubbles";
-@import "2-sections/section-1";
-@import "2-sections/story";
+@import "2-sections/stats";
+@import "2-sections/quotes";
+@import "2-sections/g-map";
+@import "2-sections/wufoo";
 @import "2-sections/footer";
 
 @import "3-layout/layout";

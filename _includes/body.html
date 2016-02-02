@@ -24,7 +24,7 @@ Hero section
   <div class="portia"></div>
   <div class="annoc">
     <h1 class="names">Portia + Ron</h1>
-    <p class="playfair">10&bull;10&bull;2016</p>
+    <p class="playfair">10&#x22C5;10&#x22C5;2016</p>
     <hr>
     <p>Maui, Hawaii</p>
   </div>
@@ -35,28 +35,56 @@ Hero section
 Quotes section
 ============================================================================ -->
 
-<h2 class="none">These two are getting married...<br /> Who would have guessed?</h2>
-<p class="ban-sub">In the  beginning certainly not them...</p>
+<section class="quotes" id="quotes">
 
-<div class="bubble-wrap">
+  <h2 class="none">These two are getting married...<br /> Who would have guessed?</h2>
 
-  <div class="bubble-left bubble-border">
-    <h1 class="bubble-heading-l">“I thought he had Antisocial Personality Disorder.”</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    <div class="button"><a href="#">Read The Whole Story</a></div>
+  <p class="sub">On first impressions certainly not them...</p>
+
+  <div class="quote-wrap">
+
+    <div class="quote-left">
+      <h1 class="quote-left-heading">“I thought he had Antisocial Personality Disorder.”</h1>
+      <p>
+        When I first met Ron I’d say I was pretty ambivalent. I thought he had Antisocial Personality Disorder.
+      </p>
+      <!-- <div class="button"><a href="#">Read The Whole Story</a></div> -->
+      <hr>
+      <div class="stats">
+        <div class="stat-box">
+          <span class="female"></span>
+          <span class="virgo"></span>
+          <span class="mbti">INFJ</span>
+          <span class="enne2"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-right">
+      <h1 class="quote-right-heading">“She seemed to me like a pretentious attention whore.”</h1>
+      <p>When I first met Portia I was unimpressed. She seemed to me like a pretentious attention whore. Later I learned that was just her being friendly and me being an ass</p>
+      <!-- <div class="button"><a href="#">Read The Whole Story</a></div> -->
+      <hr>
+      <div class="stats">
+        <div class="stat-box">
+          <span class="male"></span>
+          <span class="gemini"></span>
+          <span class="mbti">INTP</span>
+          <span class="enne5"></span>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="bubble-right bubble-fill">
-    <h1 class="bubble-heading-r">“She seemed to me like a pretentious attention whore.”</h1>
-    <p>When I first met Portia I was unimpressed. She seemed to me like a pretentious attention whore. Later I learned that was just her being friendly and me being an ass</p>
-    <div class="button"><a href="#">Read The Whole Story</a></div>
-  </div>
-</div>
+</section>
 
 <!-- ===========================================================================
 Story section
 ============================================================================ -->
+
 <section class="story" id="story">
+
   <h2 class="none">But look at them now.</h2>
 
   <figure class="img-holder">
@@ -78,30 +106,91 @@ Story section
   </figure>
 
   <h2 class="block-2">She said yes!!</h2>
+
 </section>
 
 <!-- ===========================================================================
-Rename me section
+Wedding Details section
 ============================================================================ -->
 
-<h2 class="block-1">So what's next?</h2>
+<section class="details" id="details">
 
-<h2 class="none">A wedding of course</h2>
-<p class="playfair">
-  We will be getting married on a beach in Maui. Oneloa (Ironwood) Beach at 4:30pm to be exact!
-</p>
+  <h2 class="block-1">So what's next?</h2>
 
-<div class='content-container  embed-container  maps'>
+  <h2 class="none">A wedding of course</h2>
+
+  <p class="sub">
+    We will be getting married on a beach in Maui. Oneloa (Ironwood) Beach on <time>October 10<sup>th</sup>, 2016</time> at <time>4:30pm</time> to be exact!
+  </p>
+
   <div id="g-map"></div>
-</div>
 
+</section>
+
+<!-- ===========================================================================
+Wufoo Form
+============================================================================ -->
+<div id="form-main">
+  <header id="header">
+    <h2 class="block-3">RSVP YOUR INVATATION</h2>
+    <p class="sub-alt">If your invitation was addressed to multiple members of the same household.  Please include all names of those attending in the comment box below.</p>
+  </header>
+
+  <div id="container">
+
+    <form class="form" id="form1">
+
+      <p class="name">
+        <input name="name" type="text" class="notranslate feedback-input" placeholder="Name" id="name" tabindex="1"/>
+      </p>
+
+      <p class="email">
+        <input name="email" type="text" class="notranslate feedback-input" id="email" placeholder="Email" tabindex="2"/>
+      </p>
+
+      <select id="dropdown" name="dropdown" tabindex="3">
+        <option value="Attending" selected="selected">Attending</option>
+        <option value="Not Attending">Not Attending</option>
+      </select>
+
+      <p class="text">
+        <textarea name="text" class="notranslate feedback-input" id="comment" placeholder="Comment" tabindex="4"></textarea>
+      </p>
+
+      <p class="form-text">
+        You will be redirected to a confirmation page once you hit the submit button. You will have to hit the back button to return to our site. Sorry for the inconvenience but for such a small use case it didn't seem worth the subscription cost to prevent it.
+      </p>
+
+      <div class="submit">
+        <input type="submit" name="saveForm" value="SEND" id="saveForm"/>
+        <div class="ease"></div>
+      </div>
+
+      <div class="hide">
+        <label for="comment">Do Not Fill This Out</label>
+        <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+        <input type="hidden" id="idstamp" name="idstamp" value="GwL5+0pJjEqUfCUVEefF5sQJIzq/LHNTG4AqwA26Nng=" />
+      </div>
+
+      <p class="wufoo-link">
+        Form powered by:<a href="https://www.wufoo.com/"> Wufoo</a>
+      </p>
+    </form>
+  </div>
+  <div class="spacer">
+
+  </div>
 <!-- ===========================================================================
 Footer section
 ============================================================================ -->
 
 <footer class="site-footer">
+
   <p class="credit">
-    This site <span>created with</span> more <span>heart</span> than brains <span>by: Ron Goyette</span>
+    This site created with more &#9829; than brains by: Ron Goyette
   </p>
-  <p class="notice">tenten16.com &copy; 2016</p>
+  <p class="notice">
+    tenten16.com &copy; 2016
+  </p>
+
 </footer>
