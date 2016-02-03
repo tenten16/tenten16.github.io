@@ -915,6 +915,30 @@ a:link, a:visited, a:hover, a:active {
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
     background-color: #5bb7d5; }
 
+.kissy-face {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px; }
+  .kissy-face .kissy-words {
+    position: absolute;
+    width: 92%;
+    bottom: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    background: rgba(0, 0, 0, 0.4);
+    font-family: playfair display;
+    font-size: 2.5em;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    color: #ccc;
+    padding: 20px 30px;
+    margin: 0; }
+    @media (max-width: 768px) {
+      .kissy-face .kissy-words {
+        font-size: 1em; } }
+
 /* =============================================================================
  Google map
  @mixin ============================================================================*/
@@ -1072,4 +1096,11 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 .site-footer {
   font-size: .7em;
   text-align: center;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: .7em; }
+  .site-footer .credit {
+    margin: 0;
+    padding: 0; }
+  .site-footer .notice {
+    margin: 0;
+    padding: 0; }
