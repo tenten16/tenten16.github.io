@@ -1,22 +1,9 @@
-/* =============================================================================
- Quotes Section
- =============================================================================*/
-
-.quote-wrap
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-
-  @media (max-width: 1024px)
-    display: block
-    margin: 0 auto
-    padding: 10px 0
-
 .quote-left, .quote-right
-  width: 96%
+  width: 100%
   position: relative
   border-radius: 0.5em
   padding: 1em 2em
+  margin: 0 0 1em 0
   box-sizing: border-box
   box-shadow: $shadow
 
@@ -28,7 +15,6 @@
     position: absolute
 
 .quote-left
-  margin: 10px 0.5% 10px 1%
   border: 1px solid $borderColor
   background: nth($bgColor, 1)
   color: nth($color, 1)
@@ -46,7 +32,6 @@
     z-index: -1
 
 .quote-right
-  margin: 10px 1% 10px 0.5%
   background: nth($bgColor, 2)
   color: nth($color, 2)
   text-align: right
@@ -60,33 +45,3 @@
   &:before
     box-shadow: $shadow
     z-index: -1
-
-.quote-left-heading, .quote-right-heading
-  font-family: roboto
-  font-size: 2.5em
-  text-align: center
-  padding: 1em
-
-  @media (max-width: 1440px)
-    font-size: 2em
-  @media (max-width: 1440px)
-    font-size: 1.7em
-  @media (max-width: 420px)
-    font-size: 1.5em
-
-.quote-left-heading
-  color: nth($color, 1)
-
-.quote-right-heading
-  color: nth($color, 2)
-
-.button
-  text-align: center
-  a
-    display: inline-block
-    color: nth($color, 1)
-    padding: 5px 10px
-    border-radius: .3em
-    box-sizing: border-box
-    box-shadow: $shadow
-    background-color: nth($bgColor, 3)
