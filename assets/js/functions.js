@@ -15,3 +15,10 @@ function initMap() {
     icon: image
   });
 }
+
+var feed = new Instafeed({
+  get: 'tagged',
+  tagName: 'awesome',
+  clientId: 'eb14ce2130ed4a3894c24c065990b2c4',
+  });
+feed.run();
