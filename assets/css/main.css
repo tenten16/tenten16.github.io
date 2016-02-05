@@ -333,3 +333,74 @@ fieldset[disabled] .btn-qoute.active {
       display: block;
       width: 75%;
       margin: 0.2em auto; }
+
+.tab-heading-1, .tab-heading-2, .tab-heading-3 {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: .5em; }
+  .tab-heading-1 a:link, .tab-heading-1 a:visited, .tab-heading-1 a:hover, .tab-heading-1 a:active, .tab-heading-2 a:link, .tab-heading-2 a:visited, .tab-heading-2 a:hover, .tab-heading-2 a:active, .tab-heading-3 a:link, .tab-heading-3 a:visited, .tab-heading-3 a:hover, .tab-heading-3 a:active {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-family: playfair display;
+    font-weight: 900;
+    font-size: 3em;
+    display: block; }
+
+.tab-heading-1 {
+  background-image: url(/assets/img/travletips-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.tab-heading-2 {
+  background-image: url(/assets/img/turtle-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.tab-heading-3 {
+  background-image: url(/assets/img/protips-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.p-tab, .tab-sub {
+  font-family: playfair display;
+  font-size: 1.5em;
+  padding-bottom: 1em; }
+
+.tab-list {
+  font-size: 1em; }
+  .tab-list li {
+    margin-bottom: 1em; }
+
+.info-small {
+  color: #fff;
+  margin: 0; }
+
+.info-inside {
+  margin: 0 auto;
+  width: 90%; }
+
+.btn-qoute-info {
+  margin: 1em;
+  color: #FFFFFF;
+  background-color: #5BB7D5;
+  border-color: #5BB7D5; }
+  .btn-qoute-info:hover, .btn-qoute-info:focus, .btn-qoute-info:active, .btn-qoute-info.active {
+    color: #FFFFFF;
+    background-color: #68CEF0;
+    border-color: #5BB7D5; }
+
+.site-footer {
+  background-color: #5bb7d5; }
+
+.p-small {
+  margin: 0;
+  text-align: center; }
+
+.p-small-alt {
+  text-align: center;
+  margin: 0; }
